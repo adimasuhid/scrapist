@@ -24,6 +24,8 @@ URLs prohibit the use of / and # as parameter. Substitute @ for each instead.
 ```sh
 /scrape/some_url/some_long_path@that_has@slashes/@id
 ```
+It returns a json object with a status 200 if success. Error with status 404 if
+missing parameters.
 
 Feel free to use and reuse!
 

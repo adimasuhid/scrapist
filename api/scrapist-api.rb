@@ -10,14 +10,21 @@ get "/:name" do
 end
 
 get "/scrape" do
-  scrap = Scraper.new params
-  @title = scrap.scrape
-  haml :index
+  content_type :json
+  begin
+    scrap = Scraper.new params
+    scrap.scrape.to_json
+  rescue Exception
+    { status: 404, status_message: "Not Found"}.to_json
+  end
 end
 
 get "/scrape/:base_url/:path/:css" do
-  scrap = Scraper.new params
-  @title = scrap.scrape["some_data"]
-  haml :index
+  content_type :json
+  begin
+    scrap = Scraper.new params
+    scrap.scrape.to_json
+  rescue Exception
+    { status: 404, status_message: "Not Found"}.to_json
+  end
 end
-

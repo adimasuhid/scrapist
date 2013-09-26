@@ -5,16 +5,7 @@ gem 'sass'
 gem 'shotgun'
 gem 'sinatra'
 gem 'wombat'
-
-#gem 'capistrano'
-#gem 'data_mapper'
-#gem 'dm-core'
-#gem 'dm-timestamps'
-
-#group :development do
-  #gem 'sqlite3'
-  #gem 'dm-sqlite-adapter'
-#end
+gem 'json'
 
 group :test do
   gem 'rspec'

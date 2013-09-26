@@ -9,11 +9,13 @@ class Scraper
   def scrape
     options = clean
 
-    Wombat.crawl do
+    scrape = Wombat.crawl do
       base_url options[:base_url]
       path options[:path]
       some_data css: options[:css]
     end
+    scrape["status"] = "200"
+    scrape
   end
 
 protected
