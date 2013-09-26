@@ -11,4 +11,8 @@ gem 'shotgun'
 gem 'sinatra'
 gem 'sqlite3'
 gem 'pg'
-gem 'rspec'
+gem 'wombat'
+
+group :test do
+  gem 'rspec'
+end
