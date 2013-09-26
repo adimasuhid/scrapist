@@ -25,7 +25,9 @@ protected
 
   def clean
     @options[:base_url] = "http://#{@options[:base_url]}"
+    @options[:path] = @options[:path].gsub("@","/")
     @options[:path] = "/#{@options[:path]}" if @options[:path][0] != "/"
+    @options[:css] = @options[:css].gsub("@", "#")
     @options
   end
 
