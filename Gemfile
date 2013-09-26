@@ -9,7 +9,7 @@ gem 'haml'
 gem 'sass'
 gem 'shotgun'
 gem 'sinatra'
-gem 'sqlite3'
+gem 'sqlite3', :group => :development
 gem 'pg'
 gem 'wombat'
 
