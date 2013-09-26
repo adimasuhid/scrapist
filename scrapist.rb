@@ -1,9 +1,9 @@
-require 'data_mapper'
-require 'dm-core'
-require 'dm-migrations'
-require 'dm-sqlite-adapter'
-require 'dm-timestamps'
-require 'ostruct'
+#require 'data_mapper'
+#require 'dm-core'
+#require 'dm-migrations'
+#require 'dm-sqlite-adapter'
+#require 'dm-timestamps'
+#require 'ostruct'
 
 class Hash
   def self.to_ostructs(obj, memo={})
