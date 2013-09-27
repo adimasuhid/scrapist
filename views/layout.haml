@@ -1,1 +1,17 @@
-= yield
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE-edge, chrome1"}
+    %meta{ :charset => "utf-8"}
+    %title= @title || 'ScrAPIst'
+    %link{ :rel => "stylesheet", :href => "http://yui.yahooapis.com/combo?pure/0.2.0/base-min.css&pure/0.2.0/grids-min.css&pure/0.2.0/forms-min.css&pure/0.2.0/buttons-min.css&pure/0.2.0/menus-min.css&pure/0.2.0/tables-min.css" }
+    %link{ :rel => "stylesheet", :href => "/stylesheets/application.css" }
+    %script{ :src => "/javascripts/jquery-1.10.2.min.js"}
+    %script{ :src => "/javascripts/underscore-min.js"}
+    %script{ :src => "/javascripts/backbone-min.js"}
+    %script{ :src => "/javascripts/backbone/scrapist-ui.js"}
+    %script{ :src => "/javascripts/backbone/routers/routers.js"}
+  %body
+    .container
+      = yield
+

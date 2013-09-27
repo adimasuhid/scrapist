@@ -1,3 +1,4 @@
 development.db
 .ruby-gemset
 .ruby-version
+.DS_Store

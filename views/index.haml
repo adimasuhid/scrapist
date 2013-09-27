@@ -1,1 +1,8 @@
 %h1=@title
+#container
+
+:javascript
+  $(function(){
+    window.router = new Scrapist.routers.router();
+    Backbone.history.start();
+  });
