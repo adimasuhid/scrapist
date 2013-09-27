@@ -1,4 +1,4 @@
-scraAPIst
+scrAPIst
 ========
 
 Simple API for Scraping HTML via Sinatra and Wombat
