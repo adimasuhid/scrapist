@@ -12,7 +12,7 @@ JST['index'] = _.template(
                         <input id="path" type="text" placeholder="Path - change / to @"> \
                         <label for="selector">CSS Selector</label> \
                         <input id="css" type="text" placeholder="CSS Selector"> \
-                        <button type="submit" class="pure-button pure-button-primary submit">Scrape that!</button> \
+                        <button class="pure-button pure-button-primary submit">Scrape that!</button> \
                     </fieldset> \
                 </form> \
             </div> \

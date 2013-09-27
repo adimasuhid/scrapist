@@ -32,7 +32,8 @@ Scrapist.views.FormView = Backbone.View.extend({
         return this;
     },
 
-    scrape: function(){
+    scrape: function(e){
+        e.preventDefault();
         base_url = this.$("#base_url").val();
         path = this.$("#path").val();
         css = this.$("#css").val();
